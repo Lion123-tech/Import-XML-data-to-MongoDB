@@ -4,4 +4,4 @@ const dataschema=new mongoose.Schema({
     Roll_no:String,
     Class:Number
 });
-module.exports=mongoose.model("datastore23",dataschema);
+module.exports=mongoose.model("datastore89",dataschema);
