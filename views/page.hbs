@@ -1,0 +1,43 @@
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="/CSS/upload.css">
+      <style>
+        .err-part{
+           margin:10px;
+           width:60%;
+           height:50px;
+            color:blue;
+            font-size: xx-large;
+             font-weight: bold;
+           display: {{display}};
+           
+            }
+      </style>
+    </head>
+    <body>
+       <nav class="navbar">
+          <center>
+            Springfield Olympiads
+          </center>
+       </nav>
+       <center>
+           <div class="err-part">
+             {{Errordis}}
+           </div>
+         </center>
+       <center>
+       <div class="upload">
+         <center>
+           <form method="POST" action="/upload">
+             <label>Select Excel File:</label><br>
+             
+              <input id="upload" type="file" accept=".xlsx" name="files">
+              <br>
+              <input type="submit" class="submit" value="Upload">
+           </form>
+         </center>
+       </div>
+      </center>
+    </body>
+</html>

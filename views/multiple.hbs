@@ -1,0 +1,55 @@
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="/CSS/upload.css">
+      <link rel="stylesheet" type="text/css" href="/CSS/table.css">
+      <link rel="stylesheet" type="text/css" href="/CSS/tb.css">
+      <style>
+        .err-part{
+           margin:10px;
+           width:60%;
+           height:50px;
+            color:blue;
+            font-size: xx-large;
+             font-weight: bold;
+           display: {{display}};
+           
+            }
+      </style>
+    </head>
+    <body>
+        <nav class="navbar">
+            <center>
+              Springfield Olympiads
+            </center>
+         </nav>
+          <center>
+           <div class="err-part">
+             {{Errordis}}
+           </div>
+         </center>
+         <center>
+             <div class="data">
+             <form class="search" method="POST" action="/search3">
+                 Filter:
+                 <label class="name">Name:</label>
+                 <input type="text" class="namer" name="name">
+                 <label class="name">Rollno:</label>
+                 <input type="text" class="namer" name="rollno">
+                 <input type="submit" value="Search" class="search-button" >
+             </form>
+             <div class="table">
+             <table >
+              <tr>
+                <th>Firstname</th>
+                <th>Lastname</th> 
+                <th>Age</th>
+              </tr>
+              {{{table}}}
+            </table>
+          </div>
+        </div>
+       <a href="/fulldata"><button class="button-start" >FULL DATA</button></a>
+        </center>
+    </body>
+</html>
